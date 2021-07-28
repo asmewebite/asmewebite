@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Messages</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <style>
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+    /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  </style>
+
+  <style>
+      body{
+    background: #eab0dc;
+
+}
+
+
+.container{
+  margin-top: 20px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+    background: #f6f6f6;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: sans-serif;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 100%;
+}
+
+li:nth-child(even){
+    padding: 10px;
+    background: #f2f2f2;
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(235, 156, 38);
+}
+
+
+li span:nth-child(4){
+    font-size: 12px;
+    font-weight: 100;
+    color: rgba(53, 58, 58, 0.815);
+}
+li span:nth-child(3){
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(2, 134, 13, 0.815);
+}
+
+
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
+
+
+  </style>
+
+
+</head>
+
+<body style="background-color: rgb(41, 41, 41);">
+
+  <div class="topnav" style="width: 100%;">
+    <div>
+      <img src="../assets/img/logos/ASME-VIT.png" style="width: 60px;float: left;padding: 10px;">
+      
+
+    </div>
+  
+  </div>
+
+  <main id="main">
+    <div class="container">
+        <h6 style="color: #5793D1;text-align: center;">Messages</h6>
+        <form id="members-form">
+            <ul id="members">
+           </ul>
+        </form>
+    </div>
+   </main>
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+
+
+
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+
+
+  <script>
+      //Connection
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+    apiKey: "AIzaSyBrqsxfpgvnranZURCMdJqcXqvYXtjv1dg",
+    authDomain: "asmeportal.firebaseapp.com",
+    projectId: "asmeportal",
+    storageBucket: "asmeportal.appspot.com",
+    messagingSenderId: "831583795108",
+    appId: "1:831583795108:web:c2290b92d03722b34db331",
+    measurementId: "G-CGZKGS5MVH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({ timestampInSnapshots: true});
+  </script>
+
+<script src="scripts/messages.js"></script>
+
+
+    
+
+</body>
+
+</html>
