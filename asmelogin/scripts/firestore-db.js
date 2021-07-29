@@ -180,37 +180,41 @@ async function allUserDetails(){
 
 
 
-//suggestions
+//Messages
 
-function sendMessage(event){
-  event.preventDefault()
-  var name = document.getElementById('name').value
-  var email = document.getElementById('email').value
-  var subject = document.getElementById('subject').value
-  var message = document.getElementById('message').value
+
+
+var db = firebase.firestore();
+ 
+function storeData() {
+ 
   
-  var userRef = firebase.firestore().collection('comments').add({
-  
-    name:name,
-    email:email,
-    subject:subject,
-    message:message,
-    timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-  }).then(()=>{
-    document.querySelector('.alert').style.display = 'block';
-
-    // Hide alert after 3 seconds
- setTimeout(function(){
-  document.querySelector('.alert').style.display = 'none';
-},3000);
-
-// Clear form
-document.getElementById('messageform').reset();
-
-
-  });
-}
-
+  var inputname = document.getElementById("name").value;
+  var inputemail = document.getElementById("email").value;
+  var inputsubject = document.getElementById("subject").value;
+  var inputmessage = document.getElementById("message").value;
+ 
+     db.collection("comments").add({
+         name: inputname,
+         email: inputemail,
+         subject: inputsubject,
+         message: inputmessage,
+         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        }).then(()=>{
+          document.querySelector('.alert').style.display = 'block';
+      
+          // Hide alert after 3 seconds
+       setTimeout(function(){
+        document.querySelector('.alert').style.display = 'none';
+      },3000);
+      
+      // Clear form
+      document.getElementById('messageform').reset();
+      
+      
+        });
+      }
+      
 
 
 
