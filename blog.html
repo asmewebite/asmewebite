@@ -5,595 +5,116 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ASME-VIT Blogs</title>
+  <title>ASME-VIT</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/logos/ASME-VIT.png" rel="icon">
-  <link href="assets/img/logos/ASME-VIT.png" rel="apple-touch-icon">
 
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNat">
+  <link href="../assets/img/logos/ASME-VIT.png" rel="icon">
+  <link href="../assets/img/logos/ASME-VIT.png" rel="apple-touch-icon">
 
   <style>
-      body{margin-top:20px;
-background:#f5f5f5;
-}
-.blog-post {
-  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+  height: 100%;
+  overflow: hidden;
 }
 
-.blog-post .blog-img .overlay,
-.blog-post .blog-img .post-meta {
+.bgimg {
+  /* Background image */
+  background-image: url('https://wallpaperaccess.com/full/1092758.jpg');
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+}
+
+/* Position text in the top-left corner */
+.topleft {
   position: absolute;
-  opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.blog-post .blog-img .overlay {
   top: 0;
-  right: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
   bottom: 0;
-  left: 0;
+  left: 16px;
 }
 
-.blog-post .blog-img .post-meta {
-  bottom: 5%;
-  right: 5%;
-  z-index: 1;
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.blog-post .blog-img .post-meta .read-more:hover {
-  color: #6dc77a !important;
-}
-
-.blog-post .content h1, .blog-post .content h2, .blog-post .content h3, .blog-post .content h4, .blog-post .content h5, .blog-post .content h6 {
-  line-height: 1.2;
-}
-
-.blog-post .content .title {
-  font-size: 18px;
-}
-
-.blog-post .content .title:hover {
-  color: #6dc77a !important;
-}
-
-.blog-post .content .author .name:hover {
-  color: #6dc77a !important;
-}
-
-.blog-post:hover {
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-
-.blog-post:hover .blog-img .overlay {
-  opacity: 0.65;
-}
-
-.blog-post:hover .blog-img .post-meta {
-  opacity: 1;
-}
-
-.blog-post .post-meta .like i,
-.profile-post .like i {
-  -webkit-text-stroke: 2px #dd2427;
-  -webkit-text-fill-color: transparent;
-}
-
-.blog-post .post-meta .like:active i, .blog-post .post-meta .like:focus i,
-.profile-post .like:active i,
-.profile-post .like:focus i {
-  -webkit-text-stroke: 0px #dd2427;
-  -webkit-text-fill-color: #dd2427;
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
 }
 
 
-.shadow {
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) !important;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) !important;
-}
-
-.text-muted {
-    color: #8492a6 !important;
-
-}
-
-
-.para-desc {
-    max-width: 600px;
-}
-.text-muted {
-    color: #8492a6 !important;
-
-}
-
-.section-title .title {
-    letter-spacing: 0.5px;
-    font-size: 30px;
-}
   </style>
-  
 
-
-</head>
-
-<body >
-  <div id="preloader">
-    <img src="assets/img/loader.gif">
-  </div>
-
-  <div id="contentloader">
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container">
-      <div class="header-container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <h1 class="text-light"><a href="index.html"><span>ASME-VIT</span></a></h1>
-      
-        </div>
-
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-            <li><a class="nav-link scrollto" href="index.html">About</a></li>
-            <li><a class="nav-link scrollto" href="index.html">Events</a></li>
-            <li><a class="nav-link scrollto active" href="">Blogs</a></li>
-            <li><a class="nav-link scrollto " href="gallery.html">Gallery</a></li>
-            
-            <li class="dropdown"><a style="cursor: pointer;"><span>Team</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="index.html">Board'21</a></li>
-                <li><a href="team21.html">Team'21</a></li>
-                <li><a href="ex-board.html">Former boards</a></li>
-               
-              </ul>
-            </li>
-            <li class="dropdown"><a style="cursor: pointer;"><span>Technical Teams</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="https://www.asmeprojectsteam.com/">ASME-VIT Projects Team</a></li>
-                <li><a href="TeamAnant.html">Team Anant</a></li>
-               
-              </ul>
-            </li>
-            
-            <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
-            <li><a class="getstarted scrollto" href="asmelogin/main.html">Login</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-
-      </div><!-- End Header Container -->
-    </div>
-  </header><!-- End Header -->
-
-
-
-  <main id="main">
-
-  <section style="background-color: rgb(63, 63, 63);margin-top: -20px;margin-bottom: 5px;"></section>
-
-    
-  <div class="container mt-100 mt-60">
-    <div class="row">
-        <div class="col-lg-4" style="margin-top: 20px;">
-            <div class="section-title" data-aos="fade-right">
-              <h2>OUR BLOGS</h2>
-              
-            </div>
-          </div>
+  <body>
+    <div class="bgimg">
+     
+      <div class="middle">
+        <h2>Site under maintenance</h2>
+        <hr>
+        <p class="container" style="text-align: center;font-size: 50px;color: #fff;font-weight: 600;" id="demo"></p>
+      </div>
+ 
     </div>
 
-    <div class="row">
-
-      <!--Blog 1-->
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            
-            <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog1.html'">
-                <div class="blog-img d-block overflow-hidden position-relative">
-                    <img src="assets/img/blogs/1.png" class="img-fluid rounded-top" alt="">
-                    <div class="overlay rounded-top bg-dark"></div>
-                    <div class="post-meta">
-  
-                        <a href="blogs/blog1.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="content p-3">
-                    <small class="text-muted p float-right">31ST MAR 2021</small>
-                    <h4 class="mt-2"><a href="blogs/blog1.html" class="text-dark title">What is CRISPR?</a></h4>
-                    <p style="text-align: justify;" class="text-muted mt-2">Gene editing , also sometimes known as genome editing, is a method of altering or ‘editing’ the DNA of an organism through the help of technology. Through this, genetic material can be inserted, removed, or changed in composition to make changes in the genome. There have been various different ways scientists and researchers have tried this. One of the most recent...</p>
-                    <div class="pt-3 mt-3 border-top d-flex">
-                      
-                        <div class="author mt-2">
-                            <h6 class="mb-0"><a  class="text-dark name">– by Rohan Vishwa Uchil</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-        <!--Blog 2-->
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog2.html'">
-                <div class="blog-img d-block overflow-hidden position-relative">
-                    <img src="assets/img/blogs/2.jpg" class="img-fluid rounded-top" alt="">
-                    <div class="overlay rounded-top bg-dark"></div>
-                    <div class="post-meta">
-         
-                        <a href="blogs/blog2.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="content p-3">
-                    <small class="text-muted p float-right">1ST MAR 2021</small>
-                    <h4 class="mt-2"><a href="blogs/blog2.html" class="text-dark title">Renewable Energy Industry In India: Present And Future</a></h4>
-                    <p style="text-align: justify;" class="text-muted mt-2">Indian renewable energy sector is the fourth most attractive renewable energy market in the world. India was ranked fifth in wind power, fifth in solar power and fourth in renewable power installed capacity, as of 2019.<br>Installed renewable power generation capacity has gained pace over the past few years, posting a CAGR...</p>
-                    <div class="pt-3 mt-3 border-top d-flex" >
-                      
-                        <div class="author mt-2">
-                            <h6 class="mb-0"><a href="" class="text-dark name">-by Sushobhan Mahanty</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-          <!--Blog 3-->
-        
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog3.html'">
-                <div class="blog-img d-block overflow-hidden position-relative">
-                    <img src="assets/img/blogs/3.jpg" class="img-fluid rounded-top" alt="">
-                    <div class="overlay rounded-top bg-dark"></div>
-                    <div class="post-meta">
-
-                        <a href="blogs/blog3.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="content p-3">
-                    <small class="text-muted p float-right">25TH FEB 2021</small>
-                    <h4 class="mt-2"><a href="blogs/blog3.html" class="text-dark title">India’s Policy response to Sustainable Transportation</a></h4>
-                    <p style="text-align: justify;" class="text-muted mt-2">Over the past couple of years, the world has clearly seen the need for a more sustainable approach to development. This is particularly highlighted and recognized by leaders around the world, and the pathway to achieve this was conceptualized by the United Nations. It is characterized today as the United Nation Sustainable Development Goals (SDG’s).</p>
-                    <div class="pt-3 mt-3 border-top d-flex">
-                       
-                        <div class="author mt-2">
-                            <h6 class="mb-0"><a  class="text-dark name">-by Rishi Ram Lakshman</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-            <!--Blog 4-->
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            
-            <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog4.html'">
-                <div class="blog-img d-block overflow-hidden position-relative">
-                    <img src="assets/img/blogs/4.png" class="img-fluid rounded-top" alt="">
-                    <div class="overlay rounded-top bg-dark"></div>
-                    <div class="post-meta">
-  
-                        <a href="blogs/blog4.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="content p-3">
-                    <small class="text-muted p float-right">15TH FEB 2021</small>
-                    <h4 class="mt-2"><a href="blogs/blog4.html" class="text-dark title">Budget 2021 & its Impact on India</a></h4>
-                    <p style="text-align: justify;" class="text-muted mt-2">Before we begin discussing the budget announced by our honourable Finance Minister, I would like to throw light upon the Eisenhower Doctrine given by the former US president Dwight Eisenhower. The doctrine states that for every $1 invested in infrastructure, you get a return of $5. This budget also proposes a model that is aimed at getting maximum returns and pulling the...</p>
-                    <div class="pt-3 mt-3 border-top d-flex">
-                      
-                        <div class="author mt-2">
-                            <h6 class="mb-0"><a  class="text-dark name">– by Naman Paras Vora</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-          <!--Blog 5-->
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog5.html'">
-                <div class="blog-img d-block overflow-hidden position-relative">
-                    <img src="assets/img/blogs/5.jpeg" class="img-fluid rounded-top" alt="">
-                    <div class="overlay rounded-top bg-dark"></div>
-                    <div class="post-meta">
-         
-                        <a href="blogs/blog5.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="content p-3">
-                    <small class="text-muted p float-right">1ST FEB 2021</small>
-                    <h4 class="mt-2"><a href="blogs/blog5.html" class="text-dark title">Graphene: The futuristic material</a></h4>
-                    <p style="text-align: justify;" class="text-muted mt-2">Anyone who keeps up with science and tech in the news, remembers the buzz Graphene made in the year of its discovery, i.e. 2004 by a physics professor and his student. They were playing around with a block of graphite and some scotch tape in the University of Manchester. Their discovery has completely changed the way engineers and scientists look at the limits of modern science and technology...</p>
-                    <div class="pt-3 mt-3 border-top d-flex" >
-                      
-                        <div class="author mt-2">
-                            <h6 class="mb-0"><a class="text-dark name">– by Ishika Sancheti</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-          <!--Blog 6-->
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-            <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog6.html'">
-                <div class="blog-img d-block overflow-hidden position-relative">
-                    <img src="assets/img/blogs/6.jpg" class="img-fluid rounded-top" alt="">
-                    <div class="overlay rounded-top bg-dark"></div>
-                    <div class="post-meta">
-
-                        <a href="blogs/blog6.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-                    </div>
-                </div>
-                <div class="content p-3">
-                    <small class="text-muted p float-right">13TH DEC 2020</small>
-                    <h4 class="mt-2"><a href="blogs/blog6.html" class="text-dark title">Hyperloop Technology</a></h4>
-                    <p style="text-align: justify;" class="text-muted mt-2">Hyperloop is a new form of ground transport currently in development by a number of companies. It was released by a joint team of SpaceX and Tesla in order to transport people or objects at hypersonic speeds. It is a tube like structure through which a pod may travel resistant free and being energy efficient compared to existing high speed rail systems. These pods are designed...</p>
-                    <div class="pt-3 mt-3 border-top d-flex">
-                       
-                        <div class="author mt-2">
-                            <h6 class="mb-0"><a  class="text-dark name">-by G. Sai Venu Geethika</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-        <!--Blog 7-->
-        <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog7.html'">
-              <div class="blog-img d-block overflow-hidden position-relative">
-                  <img src="assets/img/blogs/7.png" class="img-fluid rounded-top" alt="">
-                  <div class="overlay rounded-top bg-dark"></div>
-                  <div class="post-meta">
-
-                      <a href="blogs/blog7.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-                  </div>
-              </div>
-              <div class="content p-3">
-                  <small class="text-muted p float-right">1ST DEC 2020</small>
-                  <h4 class="mt-2"><a href="blogs/blog7.html" class="text-dark title">V2G Technology: The Future?</a></h4>
-                  <p style="text-align: justify;" class="text-muted mt-2">Vehicle-To-Grid(V2G), is similar to regular smart charging. Smart charging, also known as V1G charging, enables us to control the charging of electric cars in a way that allows the charging power to be increased and decreased when needed.<br>V2G goes one step further, it enables the charged power to also be momentarily pushed back to the grid from car batteries... </p>
-                  <div class="pt-3 mt-3 border-top d-flex">
-                     
-                      <div class="author mt-2">
-                          <h6 class="mb-0"><a  class="text-dark name">– by Sushobhan Mahanty</a></h6>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-
-
-
-      <!--Blog 8-->
-      <div class="col-lg-4 col-md-6 mt-4 pt-2">
-        <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog8.html'">
-            <div class="blog-img d-block overflow-hidden position-relative">
-                <img src="assets/img/blogs/8.jpg" class="img-fluid rounded-top" alt="">
-                <div class="overlay rounded-top bg-dark"></div>
-                <div class="post-meta">
-
-                    <a href="blogs/blog8.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-                </div>
-            </div>
-            <div class="content p-3">
-                <small class="text-muted p float-right">24TH NOV 2020</small>
-                <h4 class="mt-2"><a href="blogs/blog8.html" class="text-dark title">Hydrogen- An Energy Carrier</a></h4>
-                <p style="text-align: justify;" class="text-muted mt-2">You may have heard many debates on hydrogen energy. Some people think that hydrogen is an energy carrier and some think that it’s an energy source. So, here comes the question: Hydrogen, energy source or energy carrier?To answer this question, we must know what is an energy carrier and energy source. Energy carriers are used to deliver energy, move and store in a form that can be easily used... </p>
-                <div class="pt-3 mt-3 border-top d-flex">
-                   
-                    <div class="author mt-2">
-                        <h6 class="mb-0"><a  class="text-dark name">– by Sushobhan Mahanty</a></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <!--Blog 9-->
-    <div class="col-lg-4 col-md-6 mt-4 pt-2">
-      <div class="blog-post rounded border" style="height: 680px;cursor: pointer;" onclick="location.href='blogs/blog9.html'">
-          <div class="blog-img d-block overflow-hidden position-relative">
-              <img src="assets/img/blogs/9.jpg" class="img-fluid rounded-top" alt="">
-              <div class="overlay rounded-top bg-dark"></div>
-              <div class="post-meta">
-
-                  <a href="blogs/blog9.html" class="text-light read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
-              </div>
-          </div>
-          <div class="content p-3">
-              <small class="text-muted p float-right">17TH NOV 2020</small>
-              <h4 class="mt-2"><a href="blogs/blog9.html" class="text-dark title">Effect of Space Weather on Planetary Habitat</a></h4>
-              <p style="text-align: justify;" class="text-muted mt-2">Habitability of a planet is essentially the measurement of potential of a planet to
-                maintain environments to sustain life. It is one of the most important concepts in
-                exoplanet studies. Life may be generated naturally on a planet as in case of earth or
-                may have to be transferred from another body through the hypothetical concept...</p>
-              <div class="pt-3 mt-3 border-top d-flex">
-                 
-                  <div class="author mt-2">
-                      <h6 class="mb-0"><a  class="text-dark name">– By Divyanshi Shukla</a></h6>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-
-
-
-        
-    </div><!--end row-->
-
-
-
-
-
-
-
-
-</div>
-
-  </main><!-- End #main -->
-  <section></section>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>ASME-VIT</h3>
-            <p>
-              VIT Vellore<br>
-              <strong>Sudhanshu Borthakur<br> (Chairperson ASME-VIT)</strong><br>
-              <strong>Phone :</strong> <a href="tel: +91-7002219130"> +91 7002219130</a><br>
-              <strong>Email : </strong><a href="mailto:officialasmevit@gmail.com"> officialasmevit@gmail.com</a> <br>
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Events</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="gallery.html">Gallery</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="blog.html">Blogs</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Departments</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a>Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a>Technical</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a>Editorial</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a>Design</a></li>
-        
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>For sponsorship related queries</h4>
-            <p style="font-weight: bold;">Abhiram S (Public Relations Officer, ASME-VIT)<br>
-           <span style="font-weight: bold;">Contact : </span><a  style="font-weight: normal;" href="tel: +91-7907994545"> +91 7907994545</a><br>
-           <span style="font-weight: bold;">Email : </span><a style="font-weight: normal;" href="mailto:abhirams.asme@gmail.com"> abhirams.asme@gmail.com</a></p>
-            <form action="" method="post" hidden>
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>ASME-VIT</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits" hidden>
-         
-          Designed by <a href="https://bootstrapmade.com/">Ankur Jyoti Dutta</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="https://twitter.com/ASMEVIT?s=09" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/AsmeVit/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://instagram.com/asmevit?utm_medium=copy_link" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/american-society-of-mechanical-engineers-asme-vit-vellore" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-</div>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <script src="assets/js/main.js"></script>
-
-
+  </body>
 
   <script>
-    
-    document.onkeydown=function(e)
-    {
-      if (event.keyCode == 123) 
-      {
-        return false;
-      }
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
-      {
-        return false;
-      }
-  
-      if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) 
-      {
-        return false;
-      }
-  
-      if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) 
-      {
-        return false;
-      }
-    }
-  
+    // Set the date we're counting down to
+var countDownDate = new Date("Aug 7, 2021 17:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Please refresh the page";
+  }
+}, 1000);
   </script>
 
 
-</body>
-
-</html>
+  </head>
+  </html>
