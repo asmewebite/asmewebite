@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ASME-VIT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="assets/img/logos/ASME-VIT.png" rel="icon">
+  <link href="assets/img/logos/ASME-VIT.png" rel="apple-touch-icon">
+
+ 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <link href="assets/css/modals.css" rel="stylesheet">
+   <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  
+  <style>
+
+body{
+     overflow-x: hidden;
+}
+
+
+.alert{
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background:#79c879;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: none;
+}
+
+
+input[type=text], select {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=tel], select {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=email], select {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #5793D1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #5793D1;
+}
+
+/* Add a background color and some padding around the form */
+.container1 {
+  border-radius: 5px;
+  background-color: rgba(63, 63, 63, 0.829);
+  padding: 20px;
+  max-width: 900px;
+  align-items: center;
+    
+}
+
+.img-container {
+        text-align: center;
+        display: block;
+      }
+
+
+  </style>
+
+ 
+
+
+</head>
+
+<body oncontextmenu="return false" background="assets/img/backg.jpg">
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="index.html"><span>ASME-VIT</span></a></h1>
+        
+         
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Events</a></li>
+            <li><a class="nav-link scrollto" href="blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto " href="gallery.html">Gallery</a></li>
+            
+            <li class="dropdown"><a style="cursor: pointer;"><span>Team</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#team">Board'21</a></li>
+                <li><a href="team21.html">Team'21</a></li>
+                <li><a href="ex-board.html">Previous boards</a></li>
+               
+              </ul>
+            </li>
+            <li class="dropdown"><a style="cursor: pointer;"><span>Technical Teams</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="https://www.asmeprojectsteam.com/">ASME-VIT Projects Team</a></li>
+                <li><a href="TeamAnant.html">Team Anant</a></li>
+               
+              </ul>
+            </li>
+            
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="getstarted scrollto" href="asmelogin/main.html">Login</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+
+<section style="background-color: rgb(63, 63, 63);"></section>
+
+
+
+
+
+<section>
+      
+    
+   </div> 
+ 
+       <div class="row d-flex justify-content-center">
+         <div class="col-md-6">
+
+
+          <div class="container1" style="margin-top: -10px;">
+               <div class="img-container">
+                    <img src="assets/img/logos/Caddict Logo_White.png" style="width: 180px;" alt="">
+               </div>
+               
+          </div>
+
+
+          <br>
+
+
+           <div class="container1">
+         
+               
+               <div>
+                    <h3  style="color: honeydew;font-family: 'Ubuntu', sans-serif;">Register</h3>
+               </div>
+
+         <form id="reg">
+
+           
+  
+         <input type="text" id="name" name="name" placeholder="Full Name.." required>
+     
+      
+         <input type="email" id="Email" name="email" placeholder="Your email.." required>
+     
+         <input type="tel" id="Contact" name="phone" placeholder="Contact no.." required>
+         <input type="tel" id="Whatsapp" name="Phone" placeholder="Whatsapp no.." required>
+         <div class="alert">Registered Successfully</div>
+        <input class="container" id="send" type="submit" value="Submit">
+
+
+       </form>
+     
+     </div>
+     </div>
+       </div>
+   </section>
+
+   <section></section>
+
+
+
+
+
+
+
+
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+
+     <div class="footer-top">
+       <div class="container">
+         <div class="row">
+ 
+           <div class="col-lg-3 col-md-6 footer-contact">
+             <h3>ASME-VIT</h3>
+             <p>
+               VIT Vellore<br>
+               <strong>Sudhanshu Borthakur<br> (Chairperson ASME-VIT)</strong><br>
+               <strong>Phone :</strong> <a href="tel: +91-7002219130"> +91 7002219130</a><br>
+               <strong>Email : </strong><a href="mailto:officialasmevit@gmail.com"> officialasmevit@gmail.com</a> <br>
+             </p>
+           </div>
+ 
+           <div class="col-lg-2 col-md-6 footer-links">
+             <h4>Useful Links</h4>
+             <ul>
+               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="index.html">About us</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Events</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="gallery.html">Gallery</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="blog.html">Blogs</a></li>
+             </ul>
+           </div>
+ 
+           <div class="col-lg-3 col-md-6 footer-links">
+             <h4>Departments</h4>
+             <ul>
+               <li><i class="bx bx-chevron-right"></i> <a>Management</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a>Technical</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a>Editorial</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a>Design</a></li>
+         
+             </ul>
+           </div>
+ 
+           <div class="col-lg-4 col-md-6 footer-newsletter">
+             <h4>For sponsorship related queries</h4>
+             <p style="font-weight: bold;">Abhiram S (Public Relations Officer, ASME-VIT)<br>
+            <span style="font-weight: bold;">Contact : </span><a  style="font-weight: normal;" href="tel: +91-7907994545"> +91 7907994545</a><br>
+            <span style="font-weight: bold;">Email : </span><a style="font-weight: normal;" href="mailto:abhirams.asme@gmail.com"> abhirams.asme@gmail.com</a></p>
+           
+           </div>
+ 
+         </div>
+       </div>
+     </div>
+ 
+     <div class="container d-md-flex py-4">
+ 
+       <div class="me-md-auto text-center text-md-start">
+         <div class="copyright">
+           &copy; Copyright <strong><span>ASME-VIT</span></strong>. All Rights Reserved
+         </div>
+         <div class="credits" hidden>
+          
+           Designed by <a href="https://bootstrapmade.com/">Ankur Jyoti Dutta</a>
+         </div>
+       </div>
+       <div class="social-links text-center text-md-right pt-3 pt-md-0">
+         <a href="https://twitter.com/ASMEVIT?s=09" class="twitter"><i class="bx bxl-twitter"></i></a>
+         <a href="https://www.facebook.com/AsmeVit/" class="facebook"><i class="bx bxl-facebook"></i></a>
+         <a href="https://instagram.com/asmevit?utm_medium=copy_link" class="instagram"><i class="bx bxl-instagram"></i></a>
+         <a href="https://www.linkedin.com/company/american-society-of-mechanical-engineers-asme-vit-vellore" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+       </div>
+     </div>
+   </footer><!-- End Footer -->
+ 
+ 
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ </div>
+   <script src="assets/vendor/aos/aos.js"></script>
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+   <script src="assets/vendor/php-email-form/validate.js"></script>
+   <script src="assets/vendor/purecounter/purecounter.js"></script>
+   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+ 
+   <script src="assets/js/main.js"></script>
+ 
+ 
+ 
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+ 
+ 
+ 
+   <script>
+     // Your web app's Firebase configuration
+     var firebaseConfig = {
+       apiKey: "AIzaSyBrqsxfpgvnranZURCMdJqcXqvYXtjv1dg",
+       authDomain: "asmeportal.firebaseapp.com",
+       projectId: "asmeportal",
+       storageBucket: "asmeportal.appspot.com",
+       messagingSenderId: "831583795108",
+       appId: "1:831583795108:web:c2290b92d03722b34db331",
+       measurementId: "G-CGZKGS5MVH"
+     };
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+   </script>
+ 
+ <script src="asmelogin/scripts/firestore-db.js" ></script>
+ 
+ 
+ 
+ 
+ 
+ <script>
+   $(document).ready(function() {
+     $(".submit").on("click", function() {
+       $(".result").text("");
+       $(".loading-icon").removeClass("hide");
+       $(".submit").attr("disabled", true);
+       $(".btn-txt").text("Please wait...");
+ 
+       $.get("https://jsonplaceholder.typicode.com/posts", function(data) {
+         $(".result").html(JSON.stringify(data));
+         $(".loading-icon").addClass("hide");
+         $(".submit").attr("disabled", false);
+         $(".btn-txt").text("Send Message");
+       });
+     });
+   });
+ </script>
+ 
+ 
+ 
+ <script>
+     
+   document.onkeydown=function(e)
+   {
+     if (event.keyCode == 123) 
+     {
+       return false;
+     }
+     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+     {
+       return false;
+     }
+ 
+     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) 
+     {
+       return false;
+     }
+ 
+     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) 
+     {
+       return false;
+     }
+   }
+ 
+ </script>
+ 
+ 
+ </body>
+ 
+ </html>
