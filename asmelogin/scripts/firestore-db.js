@@ -217,6 +217,60 @@ function storeData() {
 
 
 
+//Registrations
+
+      // Reference messages collection
+var dataRef = firebase.database().ref('AS3VReg');
+
+// Listen for form submit
+document.getElementById('reg').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var name = getInputVal('name');
+  var email = getInputVal('Email');
+  var contact = getInputVal('Contact');
+
+ 
+
+
+  
+
+
+// Save message
+saveData(name, email, contact );
+
+document.querySelector('.alert').style.display = 'block';
+      
+          // Hide alert after 3 seconds
+       setTimeout(function(){
+        document.querySelector('.alert').style.display = 'none';
+      },3000);
+ // Clear form
+ document.getElementById('reg').reset();
+}
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveData(name, email, contact){
+  var newDataRef = dataRef.push();
+  newDataRef.set({
+    name: name,
+    email:email,
+    contact:contact
+   
+   
+  });
+}
+
+
 
 
 
