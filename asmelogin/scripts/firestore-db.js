@@ -220,7 +220,7 @@ function storeData() {
 //Registrations
 
       // Reference messages collection
-var dataRef = firebase.database().ref('AS3VReg');
+var dataRef = firebase.database().ref('BMIAReg');
 
 // Listen for form submit
 document.getElementById('reg').addEventListener('submit', submitForm);
