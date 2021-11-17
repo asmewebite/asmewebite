@@ -92,7 +92,7 @@ async function getuserInfoRealtime(userID){
 
                       <button class="logged-in" onclick="location.href='messages.html'" style="color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">Messages</button>
                       <button class="logged-in" onclick="location.href='BMIA.html'" style="margin-top:10px;color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">BASIC OF MECHATRONICS AND INTRODUCTION TO ARDUINO</button>
-                      <button class="logged-in" onclick="location.href='as3v.html'" style="margin-top:10px;color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">Automotive Styling and 3D Visualisation</button>
+                      <button class="logged-in" onclick="location.href='caddict.html'" style="margin-top:10px;color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">CADDICT-A Design Hackathon</button>
                       
                       
                       </div>
