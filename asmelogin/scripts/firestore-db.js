@@ -217,11 +217,10 @@ function storeData() {
 
 
 
-
 //Registrations
 
       // Reference messages collection
-var dataRef = firebase.database().ref('BMIAReg');
+var dataRef = firebase.database().ref('Caddict');
 
 // Listen for form submit
 document.getElementById('reg').addEventListener('submit', submitForm);
@@ -231,18 +230,30 @@ function submitForm(e){
   e.preventDefault();
 
   // Get values
-  var name = getInputVal('name');
-  var email = getInputVal('Email');
-  var contact = getInputVal('Contact');
-
  
+  var email = getInputVal('Email');
+  var teamname = getInputVal('TeamName');
+  var noTeam = getInputVal('NoTeam');
 
+  var name1 = getInputVal('Name1');
+  var email1 = getInputVal('Email1');
+  var whatsapp1 = getInputVal('Whatsapp1');
+  var contact1 = getInputVal('Contact1');
 
-  
+  var name2 = getInputVal('Name2');
+  var email2 = getInputVal('Email2');
+  var whatsapp2 = getInputVal('Whatsapp2');
+  var contact2 = getInputVal('Contact2');
+
+  var name3 = getInputVal('Name3');
+  var email3 = getInputVal('Email3');
+  var whatsapp3 = getInputVal('Whatsapp3');
+  var contact3 = getInputVal('Contact3');
+
 
 
 // Save message
-saveData(name, email, contact );
+saveData(email, teamname, noTeam, name1, email1, whatsapp1, contact1, name2, email2,  whatsapp2, contact2, name3, email3, whatsapp3, contact3 );
 
 document.querySelector('.alert').style.display = 'block';
       
@@ -260,22 +271,29 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveData(name, email, contact){
+function saveData(email, teamname, noTeam, name1, email1, whatsapp1, contact1, name2, email2,  whatsapp2, contact2, name3, email3, whatsapp3, contact3 ){
   var newDataRef = dataRef.push();
   newDataRef.set({
-    name: name,
     email:email,
-    contact:contact
+    teamname:teamname,
+    noTeam:noTeam,
+    name1:name1,
+    email1:email1,
+    whatsapp1:whatsapp1,
+    contact1:contact1,
+    name2:name2,
+    email2:email2,
+    whatsapp2:whatsapp2,
+    contact2:contact2,
+    name3:name3,
+    email3:email3,
+    whatsapp3:whatsapp3,
+    contact3:contact3,
+
    
    
   });
 }
-
-
-
-
-
-
 
 
 
