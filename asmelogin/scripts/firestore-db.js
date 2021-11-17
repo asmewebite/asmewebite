@@ -217,7 +217,7 @@ function storeData() {
 
 
 
-      //Registrations
+       //Registrations
 
       // Reference messages collection
 var dataRef = firebase.database().ref('Caddict');
@@ -230,10 +230,9 @@ function submitForm(e){
   e.preventDefault();
 
   // Get values
- 
-  var email = getInputVal('Email');
+
   var teamname = getInputVal('TeamName');
-  var noTeam = getInputVal('NoTeam');
+
 
   var name1 = getInputVal('Name1');
   var email1 = getInputVal('Email1');
@@ -256,7 +255,7 @@ function submitForm(e){
 
 
 // Save message
-saveData(email, teamname, noTeam, name1, email1, college1, whatsapp1, contact1, name2, email2, college2, whatsapp2, contact2, name3, email3, college3, whatsapp3, contact3 );
+saveData(teamname, name1, email1, college1, whatsapp1, contact1, name2, email2, college2, whatsapp2, contact2, name3, email3, college3, whatsapp3, contact3 );
 
 document.querySelector('.alert').style.display = 'block';
       
@@ -274,12 +273,12 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveData(email, teamname, noTeam, name1, email1, college1, whatsapp1, contact1, name2, email2, college2, whatsapp2, contact2, name3, email3, college3, whatsapp3, contact3 ){
+function saveData(teamname, name1, email1, college1, whatsapp1, contact1, name2, email2, college2, whatsapp2, contact2, name3, email3, college3, whatsapp3, contact3 ){
   var newDataRef = dataRef.push();
   newDataRef.set({
-    email:email,
+
     teamname:teamname,
-    noTeam:noTeam,
+ 
     name1:name1,
     email1:email1,
     college1:college1,
@@ -300,7 +299,6 @@ function saveData(email, teamname, noTeam, name1, email1, college1, whatsapp1, c
    
   });
 }
-
 
 
 
