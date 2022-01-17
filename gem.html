@@ -189,6 +189,8 @@ input[type=submit]:hover {
  
        <div class="row d-flex justify-content-center">
          <div class="col-md-6">
+          <div style="background-color:rgb(63, 63, 63) ;"><p class="container" style="text-align: center;font-size: 26px;color: #fff;padding: 5px;" id="demo"></p></div>
+
 
           
           <div class="container1" style="margin-top: -10px;">
@@ -363,28 +365,12 @@ input[type=submit]:hover {
  
  
  
- <script>
-   $(document).ready(function() {
-     $(".submit").on("click", function() {
-       $(".result").text("");
-       $(".loading-icon").removeClass("hide");
-       $(".submit").attr("disabled", true);
-       $(".btn-txt").text("Please wait...");
- 
-       $.get("https://jsonplaceholder.typicode.com/posts", function(data) {
-         $(".result").html(JSON.stringify(data));
-         $(".loading-icon").addClass("hide");
-         $(".submit").attr("disabled", false);
-         $(".btn-txt").text("Send Message");
-       });
-     });
-   });
- </script>
+
  
  
 <script>
   // Set the date we're counting down to
-  var countDownDate = new Date("November 25, 2021 11:59:00").getTime();
+  var countDownDate = new Date("January 29, 2022 11:59:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -408,7 +394,7 @@ input[type=submit]:hover {
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "Attendance closed for the week";
+      document.getElementById("demo").innerHTML = "Registration closed";
     }
   }, 1000);
   </script>
