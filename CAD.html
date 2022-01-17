@@ -189,10 +189,13 @@ input[type=submit]:hover {
  
        <div class="row d-flex justify-content-center">
          <div class="col-md-6">
+          <div style="background-color:rgb(63, 63, 63) ;"><p class="container" style="text-align: center;font-size: 26px;color: #fff;padding: 5px;" id="demo"></p></div>
+
 
           
           <div class="container1" style="margin-top: -10px;">
                <div class="img-container">
+                 
                 
                     <h3 style="font-weight: 700;color: azure;">CAD Modelling in Automotive Design</h3>
                     <p style="text-align: justify;color: white;">In this session we will cover the use of CAD surfacing systems (especially Alias and ICEM Surf) for aesthetic shape creation (interior & exterior) in Car Design Studios. We will explain what makes this different to CAD modelling for other engineering applications (such as engines). The speaker will also talk about his history in the industry and how students might get into this field if they're interested.
@@ -363,29 +366,11 @@ input[type=submit]:hover {
  
  
  
- 
- <script>
-   $(document).ready(function() {
-     $(".submit").on("click", function() {
-       $(".result").text("");
-       $(".loading-icon").removeClass("hide");
-       $(".submit").attr("disabled", true);
-       $(".btn-txt").text("Please wait...");
- 
-       $.get("https://jsonplaceholder.typicode.com/posts", function(data) {
-         $(".result").html(JSON.stringify(data));
-         $(".loading-icon").addClass("hide");
-         $(".submit").attr("disabled", false);
-         $(".btn-txt").text("Send Message");
-       });
-     });
-   });
- </script>
- 
+
  
 <script>
   // Set the date we're counting down to
-  var countDownDate = new Date("November 25, 2021 11:59:00").getTime();
+  var countDownDate = new Date("January 26, 2022 11:59:00").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -409,7 +394,7 @@ input[type=submit]:hover {
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "Attendance closed for the week";
+      document.getElementById("demo").innerHTML = "Registration closed";
     }
   }, 1000);
   </script>
