@@ -73,37 +73,20 @@ async function getuserInfoRealtime(userID){
                         <div class="userdee" style="background-color:#5793D1;text-align: left;width: 100%;padding: 10px">
                         <div class="collection-item"><h5 style="color:white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"">${userInfo.name}</h5></div>
                         <div class="collection-item"  style="color:rgb(219, 219, 219)"> E-mail :  ${userInfo.email}<br>
-
-                       </div>
-
-                        
+                       </div>            
                         
                       </div>
-                   
-
-
-                     
-                     
-                      
                       </div>
 
 
                       <div class="container" style="padding: 10px;margin-top: 30px;text-align: center;">
 
                       <button class="logged-in" onclick="location.href='messages.html'" style="color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">Messages</button>
-                     
-                      <button class="logged-in" onclick="location.href='caddict.html'" style="margin-top:10px;color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">CADDICT-A Design Hackathon</button>
-                       <button class="logged-in" onclick="location.href='EVDM.html'" style="margin-top:10px;color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">Electric Vehicle Design Workshop</button>
+                      <button class="logged-in" onclick="location.href='EVDM.html'" style="margin-top:10px;color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">BASIC OF MECHATRONICS AND INTRODUCTION TO ARDUINO</button>
+                      <button class="logged-in" onclick="location.href='as3v.html'" style="margin-top:10px;color:white;background-color: rgb(73, 73, 73);cursor: pointer;padding: 10px;border-radius: 8px;text-align: center;box-shadow: 1px 3px 5px rgba(0,0,0,0.1);width: 100%;height: 100px;">Automotive Styling and 3D Visualisation</button>
                       
-                      </div>
-
-                        
+                      </div>                       
                         `
-                       
-
-                       
-
-
                 }    
              }
         })
@@ -117,16 +100,10 @@ async function getuserInfoRealtime(userID){
         <h2 style="color: #5793D1;margin-top:90px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"">'ASME-VIT Portal'</h2></div>
 
         <div class="container" style="margin-top:50px">
-          
-
-          
-          
-
   </div>
  
   <button class="modal-trigger" href="#modal2" id="loginli" style="width:200px;color:white;padding:8px;width:200px;border-radius: 8px;margin-top:70px;cursor: pointer;background-color:#5793D1;padding:8px;border:none;height: 40px">Login</button>
-        
-       
+            
         `
     }
 }
@@ -217,10 +194,12 @@ function storeData() {
 
 
 
-       //Registrations
+
+
+      //Registrations Caddict
 
       // Reference messages collection
-var dataRef = firebase.database().ref('Caddict');
+var dataRef = firebase.database().ref('CAD22');
 
 // Listen for form submit
 document.getElementById('reg').addEventListener('submit', submitForm);
@@ -231,31 +210,19 @@ function submitForm(e){
 
   // Get values
 
-  var teamname = getInputVal('TeamName');
 
 
-  var name1 = getInputVal('Name1');
-  var email1 = getInputVal('Email1');
-  var college1 = getInputVal('College1');
-  var whatsapp1 = getInputVal('Whatsapp1');
-  var contact1 = getInputVal('Contact1');
+  var name = getInputVal('Name');
+  var email = getInputVal('Email');
+  var college = getInputVal('College');
+  var whatsapp = getInputVal('Whatsapp');
 
-  var name2 = getInputVal('Name2');
-  var email2 = getInputVal('Email2');
-  var college2 = getInputVal('College2');
-  var whatsapp2 = getInputVal('Whatsapp2');
-  var contact2 = getInputVal('Contact2');
 
-  var name3 = getInputVal('Name3');
-  var email3 = getInputVal('Email3');
-  var college3 = getInputVal('College3');
-  var whatsapp3 = getInputVal('Whatsapp3');
-  var contact3 = getInputVal('Contact3');
 
 
 
 // Save message
-saveData(teamname, name1, email1, college1, whatsapp1, contact1, name2, email2, college2, whatsapp2, contact2, name3, email3, college3, whatsapp3, contact3 );
+saveData(name, email, college, whatsapp);
 
 document.querySelector('.alert').style.display = 'block';
       
@@ -273,44 +240,77 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveData(teamname, name1, email1, college1, whatsapp1, contact1, name2, email2, college2, whatsapp2, contact2, name3, email3, college3, whatsapp3, contact3 ){
+function saveData(name, email, college, whatsapp,){
   var newDataRef = dataRef.push();
   newDataRef.set({
 
-    teamname:teamname,
- 
-    name1:name1,
-    email1:email1,
-    college1:college1,
-    whatsapp1:whatsapp1,
-    contact1:contact1,
-    name2:name2,
-    email2:email2,
-    college2:college2,
-    whatsapp2:whatsapp2,
-    contact2:contact2,
-    name3:name3,
-    email3:email3,
-    college3:college3,
-    whatsapp3:whatsapp3,
-    contact3:contact3,
+    name:name,
+    email:email,
+    college:college,
+    whatsapp:whatsapp,
 
-   
-   
   });
 }
 
 
 
 
+     //Registrations Caddict
 
+      // Reference messages collection
+      var dataRef = firebase.database().ref('GEM22');
 
-
-
-
-
-
-
-
+      // Listen for form submit
+      document.getElementById('reg').addEventListener('submit', submitForm);
+      
+      // Submit form
+      function submitForm(e){
+        e.preventDefault();
+      
+        // Get values
+      
+      
+      
+        var name = getInputVal('Name');
+        var email = getInputVal('Email');
+        var college = getInputVal('College');
+        var whatsapp = getInputVal('Whatsapp');
+      
+      
+      
+      
+      
+      // Save message
+      saveData(name, email, college, whatsapp);
+      
+      document.querySelector('.alert').style.display = 'block';
+            
+                // Hide alert after 3 seconds
+             setTimeout(function(){
+              document.querySelector('.alert').style.display = 'none';
+            },3000);
+       // Clear form
+       document.getElementById('reg').reset();
+      }
+      
+      // Function to get get form values
+      function getInputVal(id){
+        return document.getElementById(id).value;
+      }
+      
+      // Save message to firebase
+      function saveData(name, email, college, whatsapp,){
+        var newDataRef = dataRef.push();
+        newDataRef.set({
+      
+          name:name,
+          email:email,
+          college:college,
+          whatsapp:whatsapp,
+      
+        });
+      }
+      
+      
 
 
