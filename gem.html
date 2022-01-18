@@ -358,12 +358,68 @@ input[type=submit]:hover {
      firebase.initializeApp(firebaseConfig);
    </script>
  
- <script src="asmelogin/scripts/firestore-db.js" ></script>
+
  
 
  
  
- 
+ <script>
+    // Reference messages collection
+    var dataRef = firebase.database().ref('GEM22');
+
+// Listen for form submit
+document.getElementById('reg').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+
+
+
+  var name = getInputVal('Name');
+  var email = getInputVal('Email');
+  var college = getInputVal('College');
+  var whatsapp = getInputVal('Whatsapp');
+
+
+
+
+
+// Save message
+saveData(name, email, college, whatsapp);
+
+document.querySelector('.alert').style.display = 'block';
+      
+          // Hide alert after 3 seconds
+       setTimeout(function(){
+        document.querySelector('.alert').style.display = 'none';
+      },3000);
+ // Clear form
+ document.getElementById('reg').reset();
+}
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveData(name, email, college, whatsapp,){
+  var newDataRef = dataRef.push();
+  newDataRef.set({
+
+    name:name,
+    email:email,
+    college:college,
+    whatsapp:whatsapp,
+
+  });
+}
+
+
+ </script>
  
 
  
