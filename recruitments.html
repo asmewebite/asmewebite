@@ -188,8 +188,7 @@ input[type=submit]:hover {
  
        <div class="row d-flex justify-content-center" style="margin-top: -65px;padding: 6px;">
          <div class="col-md-6">
-          <div style="background-color:rgb(2, 179, 40) ;"><p class="container" style="text-align: center;font-size: 26px;color: #fff;padding: 5px;" id="demo"></p></div>
-
+       
 
           
           <div class="container1" style="margin-top: -10px;">
@@ -540,37 +539,6 @@ function saveData(name, regno, email, whatsapp, contact, Department1, Department
  
  
 
- 
-<script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("February 26, 2022 11:59:00").getTime();
-  
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-  
-    // Get today's date and time
-    var now = new Date().getTime();
-  
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-  
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-    // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-  
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "Registration closed";
-    }
-  }, 1000);
-  </script>
  
  <script>
      
