@@ -118,7 +118,7 @@ async function getuserInfoRealtime(userID){
 						         
                        
                         <li>
-                        <a href="members.html"><i class="fa fa-users"></i> <span>Members List</span></a>
+                        <a href="members.html"><i class="fa fa-users"></i> <span>Admins Panel</span></a>
                        </li>
 
                     </ul>
@@ -185,7 +185,7 @@ async function getuserInfoRealtime(userID){
                                         </ul>
                                     </div>
                                     
-                                    <button style="background-color: #009efb;border-radius: 5px;height:35px;width:90px;border: none;cursor: pointer;color: white;margin-left:22px" class="modal-trigger" href="#modal3">Edit details</button> 
+                                    <button style="background-color: #df0f00;border-radius: 5px;height:35px;width:90px;border: none;cursor: pointer;color: white;margin-left:22px" class="modal-trigger" href="#modal3">Edit details</button> 
          
                                
                                
@@ -198,6 +198,42 @@ async function getuserInfoRealtime(userID){
             
 
         </div>
+
+
+        <div class="container-fluid">
+        <div class="card">
+             <div class="card-header">
+                  <h4 class="card-title d-inline-block">MESSAGES</h4> 
+             </div>
+             <div class="card-body p-0">
+                  <div class="table-responsive">
+                       <table class="table mb-0">
+                       
+                            <tbody>
+                                 <tr>
+                                      <td style="min-width: 200px;">
+                                           
+                                           <h2><a href="messages.html" >Messages</a></h2>
+                                      </td>                 
+
+                                      <td class="text-right">
+                                           <a href="messages.html"  class="btn btn-danger take-btn">View</a>
+                                      </td>
+                                 </tr>
+                          
+                               
+
+                                
+                            </tbody>
+                       </table>
+                  </div>
+             </div>
+        </div>
+   </div>
+
+
+
+
 
         <div class="container-fluid">
         <div class="card">
@@ -216,7 +252,7 @@ async function getuserInfoRealtime(userID){
                                       </td>                 
 
                                       <td class="text-right">
-                                           <a href="Recruitments.html"  class="btn btn-outline-primary take-btn">View</a>
+                                           <a href="Recruitments.html"  class="btn btn-danger take-btn">View</a>
                                       </td>
                                  </tr>
                                  <tr>
@@ -226,7 +262,7 @@ async function getuserInfoRealtime(userID){
                                       </td>                 
 
                                       <td class="text-right">
-                                           <a href="IASTSF.html" class="btn btn-outline-primary take-btn">View</a>
+                                           <a href="IASTSF.html" class="btn btn-danger take-btn">View</a>
                                       </td>
                                  </tr>
                                  <tr>
@@ -236,7 +272,7 @@ async function getuserInfoRealtime(userID){
                                       </td>                 
 
                                       <td class="text-right">
-                                           <a href="CODMED.html" class="btn btn-outline-primary take-btn">View</a>
+                                           <a href="CODMED.html" class="btn btn-danger take-btn">View</a>
                                       </td>
                                  </tr>
                                  <tr>
@@ -246,7 +282,7 @@ async function getuserInfoRealtime(userID){
                                       </td>                 
 
                                       <td class="text-right">
-                                           <a href="RPM.html" class="btn btn-outline-primary take-btn">View</a>
+                                           <a href="RPM.html" class="btn btn-danger take-btn">View</a>
                                       </td>
                                  </tr>
                                
