@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,149 +10,220 @@
     
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   
+
+
 
     <style>
-      /* Add a black background color to the top navigation */
-    .topnav {
-      background-color: #333;
-      overflow: hidden;
-    }
-    
-    /* Style the links inside the navigation bar */
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    
-    /* Change the color of links on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    /* Add a color to the active/current link */
-    .topnav a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-    </style>
+  .alert{
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        background:#79c879;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: none;
+      }
+  
 
+
+
+
+      /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2e2e2e00;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(207, 207, 207);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(185, 185, 185);
+  }
+  </style>
   
             
 </head>
-<body  style="background-color: rgb(41, 41, 41);overflow: hidden;">
+<body  style="overflow-x: hidden;background-color: black;">
 
   <div class="topnav" style="width: 100%;">
-    <img src="../assets/img/ASME-VIT.png" style="width: 70px;float: left;padding: 10px;">
+   
     <div style="float: right"> 
       <a class="modal-trigger" href="#modal2" id="loginli" style="visibility: collapse;color:#5793D1;">Login</a>
-      <a class="modal-trigger" href="#helpp" id="loginli" style="color:#0bd626;">Help</a>
       <a class="modal-trigger" href="#modal1" id="signupli" style="visibility: collapse;"></a>
-      <a style="color: tomato;margin-right: 2px;display: none;cursor: pointer;font-size: 15px;" onclick="logout()" id="logoutli">Log Out</a>
+     
 
     </div>
   
   </div>
-    
-    <!--Signup Modal -->
-  <div id="modal1" class="modal" style="visibility: hidden;">
-    <div class="modal-content">
-      <h4>Signup</h4>
-      <form autocomplete="off" onsubmit="signup(event)">
-        <input type="email" id="signupEmail" placeholder="email" />
-        <input type="password" id="signupPassword" placeholder="password" />
-        <button class="btn waves-effect #fbc02d yellow darken-2" type="submit">submit</button>   
-      </form>
-  
+
+
+  <div class="header">
+    <div class="header-left">
+      <a class="logo" style="margin-left: -15px;">
+        <img src="../assets/img/ASME-VIT.png" width="35" height="35" alt=""> <span>ASME-VIT Portal</span>
+      </a>
+    </div>
+    <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+
+
+          <ul class="nav user-menu float-right" id="logoutli" style="display: none;">
+            
       
-     
-    </div>
-  </div>
-         
-    <!--login Modal -->
-  <div id="modal2" class="modal" style="height: 300px;overflow: hidden;">
-    <div class="modal-content">
-      <h4 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Login</h4>
-      <form autocomplete="off" onsubmit="login(event)">
-        <input style="margin-top: 10px;" type="email" id="loginEmail" placeholder="Email" />
-        <input type="password" id="loginPassword" placeholder="Password" />
-        <button class="btn waves-effect" style="background-color: #5793D1;margin-top: 10px;" type="submit">submit</button>   
-      </form>
-     
-    </div>
-  </div>
 
-<!--Helpline-->
-  <div id="helpp" class="modal" style="height: 300px;overflow: hidden;">
-    <div class="modal-content">
-      <h4 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Help :</h4>
-      <hr>
+          </ul>
 
-      <h5 style="font-size: 18px;">Contact : <a href="tel: +91 7086952212"> +91 7086952212</a></h5>
-      <h5 style="font-size: 18px;">E-mail : <a href="mailto:asmevit.website@gmail.com"> asmevit.website@gmail.com</a></h5>
-      </div></div>
-
-
-
-
-
-    <!--edit profile -->
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-      <h4>Edit your details</h4>
-      <div class="file-field input-field">
-        <div class="btn #fbc02d yellow darken-2">
-          <span>File</span>
-          <input type="file" accept="image/*" onchange="uploadImage(event)" />
-        </div>
-        <div class="file-path-wrapper">
-          <input class="file-path validate" type="text">
-        </div>
+          <div class="dropdown mobile-user-menu float-right" id="logoutli" style="display: none;">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+              
+          </div>
       </div>
-      <form autocomplete="off" id="editProfile" onsubmit="updateUserProfile(event)">
-        <input type="email" name="profileEmail" placeholder="email" />
-        <input type="text" name="name" placeholder="name" />
-        <input type="number" name="phoneno" placeholder="phoneno" />
-        <input type="number" name="whatsapp" placeholder="whatsapp" />
-        <input type="text" name="college" placeholder="College" />
-        <input type="text" name="department" placeholder="Department" />
-        <input type="text" name="status" placeholder="Status" />
 
-        <button class="btn waves-effect #fbc02d yellow darken-2" type="submit">submit</button>   
-      </form>
-  
-      
-     
+
+
+
+      <!-- LoGOUT Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log Out</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to LogOut?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" onclick="logout()" data-dismiss="modal">Confirm</button>
+      </div>
     </div>
   </div>
+</div>
+      
 
+
+<div style="margin-top: 20px;"></div>
+
+
+
+
+  <div id="logindata"></div>
+         
+ 
+    <!--edit profile details -->
+  <div id="modal3" class="modal container" style="padding: 10px;;width: 100%;height: auto;overflow-y:visible;">
+    <div class="modal-content">
+      <h4 >Edit your details :</h4>
+     
+     
+      <form autocomplete="off" id="editProfile" style="margin-top: 30px;" onsubmit="updateUserProfile(event)">
+        <div class="form-group row">
+          <label class="col-form-label col-md-2">Name </label>
+          <div class="col-md-10">
+              <input type="text" name="name" class="form-control">
+          </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-form-label col-md-2">Email ID </label>
+        <div class="col-md-10">
+            <input type="text" disabled name="profileEmail" class="form-control">
+        </div>
+    </div>
+
+
+  <div class="form-group row">
+    <label class="col-form-label col-md-2">Phone no. </label>
+    <div class="col-md-10">
+        <input type="text" name="phoneno" class="form-control">
+    </div>
+</div>
+
+<div class="form-group row">
+  <label class="col-form-label col-md-2">Whatsapp no. </label>
+  <div class="col-md-10">
+      <input type="text" name="whatsapp" class="form-control">
+  </div>
+</div>
+
+
+<div class="form-group row">
+  <label class="col-form-label col-md-2">Department</label>
+  <div class="col-md-10">
+      <input type="text" name="department" class="form-control">
+  </div>
+</div>
+
+
+<div class="alert">Updated successfully</div>
+
+  
+
+        <button id="update" style="width: 100%;background-color: #5793D1;padding: 10px;border: none;cursor: pointer;color: white;"  type="submit">Update</button> 
+        
+      </form>
+  
+    </div>   
+  </div> 
+
+
+
+ <!--edit profile Picture -->
+  <div id="modal4" class="modal container" style="padding: 10px;width: 100%;height: auto;overflow-y: scroll;">
+    <div class="modal-content">
+      <h4 >Update Profile Picture</h4>
+      <p style="color: red;font-style: italic;">File size must be less than 2MB</p>
+  
+      <div class="file-field input-field">
+        <div class="btn btn-secondary">
+          <span>Choose file</span>
+          <input type="file" id="file1" max-size="2000" accept="image/*" onchange="uploadImage(event)" />
+         
+        </div>
+        
+        <div class="file-path-wrapper">
+          <input class="file-path validate"  type="text">
+        </div>
+
+        <br><br>
+          <p style="text-align:right" class="prog"></p>
+        <progress  style="width: 100%;height: 25px;margin-top: -10vh;" role="progressbar" value="0" max="100" id="uploader">0%</progress>
+      
+        <div class="success" style="color: #139413;text-align: center;font-size: 20px;" ></div>
+       
+      
+      
+      </div>
+    </div>
+  </div> 
+
+	
+	
+	
 
   <div class="center">
     <div class="userDetails"></div>
   </div>
          
-  <table id="table" style="display: none;">
-    <thead>
-      <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>whatsapp</th>
-          <th>department</th>
-          <th>Preference II</th>
-          <th>college</th>
-          <th>status</th>
-      </tr>
-    </thead>
-
-    <tbody id="tbody">
-     
-    </tbody>
-  </table>
+<section>
+  <div class="container" style="text-align: center;">-----</div>
+</section>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
@@ -180,10 +253,17 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
-<script src="./scripts/auth.js"></script>
-<script src="./scripts/firestore-db.js" ></script>
+<script src="scripts/auth.js"></script>
+<script src="scripts/firestore-db.js" ></script>
 
-
+<div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/Chart.bundle.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/app.js"></script>
 
 
 
