@@ -44,6 +44,20 @@ async function login(e){
 }
 
 
+function forgotPass(){
+  const email = document.getElementById("loginEmail").value
+  firebase.auth().sendPasswordResetEmail(email)
+  .then(() => {
+      alert("Reset link sent to your email id")
+  })
+  .catch((err) => {
+    console.log(err)
+    M.toast({html: err.message,classes:"red"})
+  });
+}
+
+
+
 function logout(){
     firebase.auth().signOut()
     
