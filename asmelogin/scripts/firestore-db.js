@@ -42,7 +42,7 @@ async function getuserInfo(userID){
       height: 5%;display: flex; justify-content: center;align-items: center;float: left; padding: 20px;padding-bottom: 30px; padding-top: 30px;
       border-bottom: 1px solid transparent; border-color: cornflowerblue;background: #000;">
           <h2 id="form_header" style="display: inline-block; font-size: 15px;font-family: Bowlby One SC;
-          font-weight: 900;  text-transform: uppercase;letter-spacing: 1px; background-color: rgb(255, 255, 255);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"> ASME_VIT PORTAL </h2>
+          font-weight: 900;  text-transform: uppercase;letter-spacing: 1px; background-color: rgb(255, 255, 255);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"> ASME-VIT PORTAL </h2>
       </div>
       <div id="form_content_container" style="width: 100%; height: 90%; float: left; display: flex;justify-content: center;align-items: center;padding-top: 30px;">
           <div id="form_content_inner_container" style="width: 75%;height: 100%;float: left;">
@@ -289,7 +289,7 @@ async function getuserInfoRealtime(userID){
         height: 5%;display: flex; justify-content: center;align-items: center;float: left; padding: 20px;padding-bottom: 30px; padding-top: 30px;
         border-bottom: 1px solid transparent; border-color: cornflowerblue;background: #000;">
             <h2 id="form_header" style="display: inline-block; font-size: 15px;font-family: Bowlby One SC;
-            font-weight: 900;  text-transform: uppercase;letter-spacing: 1px; background-color: rgb(255, 255, 255);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"> ASME_VIT PORTAL </h2>
+            font-weight: 900;  text-transform: uppercase;letter-spacing: 1px; background-color: rgb(255, 255, 255);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"> ASME-VIT PORTAL </h2>
         </div>
         <div id="form_content_container" style="width: 100%; height: 90%; float: left; display: flex;justify-content: center;align-items: center;padding-top: 30px;">
             <div id="form_content_inner_container" style="width: 75%;height: 100%;float: left;">
