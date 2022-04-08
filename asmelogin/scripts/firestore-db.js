@@ -248,7 +248,7 @@ async function getuserInfoRealtime(userID){
 			     <tr>
                             <td style="min-width: 200px;">
                                  
-                                 <h2><a href="MEE2022.html" >>Mechanical Engineering and Entrepreneurship</a></h2>
+                                 <h2><a href="MEE2022.html">Mechanical Engineering and Entrepreneurship</a></h2>
                             </td>                 
 
                             <td class="text-right">
