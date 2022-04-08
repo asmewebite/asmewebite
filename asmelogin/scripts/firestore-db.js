@@ -245,6 +245,28 @@ async function getuserInfoRealtime(userID){
                        <table class="table mb-0">
                        
                             <tbody>
+			     <tr>
+                            <td style="min-width: 200px;">
+                                 
+                                 <h2><a href="MEE2022.html" >>Mechanical Engineering and Entrepreneurship</a></h2>
+                            </td>                 
+
+                            <td class="text-right">
+                                 <a href="MEE2022.html"  class="btn btn-danger take-btn">View</a>
+                            </td>
+                       </tr>
+
+                       <tr>
+                       <td style="min-width: 200px;">
+                            
+                            <h2><a href="FSAD.html" >Futuristic view of Sustainable Aircraft Design</a></h2>
+                       </td>                 
+
+                       <td class="text-right">
+                            <a href="FSAD.html"  class="btn btn-danger take-btn">View</a>
+                       </td>
+                  </tr>
+		  
                                  <tr>
                                       <td style="min-width: 200px;">
                                            
