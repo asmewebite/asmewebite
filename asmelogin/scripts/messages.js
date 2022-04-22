@@ -4,7 +4,6 @@ function renderMembers(doc){
     let li = document.createElement('li');
     let name = document.createElement('span');
     let email = document.createElement('span');
-    let subject = document.createElement('span');
     let message = document.createElement('span');
  
 
@@ -14,7 +13,6 @@ function renderMembers(doc){
     li.setAttribute('data-id',doc.id);
     name.textContent = doc.data().name;
     email.textContent = doc.data().email;
-    subject.textContent = doc.data().subject;
     message.textContent = doc.data().message;
   
 
@@ -23,7 +21,6 @@ function renderMembers(doc){
 
     li.appendChild(name);
     li.appendChild(email);
-    li.appendChild(subject);
     li.appendChild(message);
     
  
