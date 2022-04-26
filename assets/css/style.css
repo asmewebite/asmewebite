@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo {
   overflow: hidden;
   padding: 16px 30px 12px 30px;
-  background: #0289e2;
+  background: #D91919;
 }
 
 #header .logo h1 {
@@ -162,10 +162,10 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     top: 0;
-    background: #0289e2;
+    background: #D91919;
   }
   #header.header-scrolled, #header .header-container {
-    background: #0289e2;
+    background: #D91919;
   }
   #header .logo {
     padding-left: 0;
@@ -219,11 +219,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #0289e2;
+  color: #D91919;
 }
 
 .navbar .getstarted {
-  background: #0289e2;
+  background: #D91919;
   padding: 10px 25px;
   margin-left: 30px;
   margin-right: 15px;
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .getstarted:hover {
   color: #fff;
-  background: #015b97;
+  background: #c60505;
 }
 
 .navbar .dropdown ul {
@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #0289e2;
+  color: #D91919;
 }
 
 .navbar .dropdown:hover > ul {
@@ -456,8 +456,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #015b97;
-  border: 2px solid #015b97;
+  background: #c60505;
+  border: 2px solid #c60505;
 }
 
 @media (min-width: 1024px) {
@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero {
-    height: 100vh;
+    height: 95vh;
   }
   #hero .container {
     padding-top: 60px;
@@ -476,7 +476,14 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 {
     font-size: 32px;
     line-height: 36px;
+    
   }
+
+  #hero #imghero{
+    width: 59em;
+  }
+
+ 
 
 
 
@@ -528,7 +535,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #015b97;
+  background: #D91919;
   text-align: center;
   padding: 5px 0;
 }
