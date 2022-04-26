@@ -177,8 +177,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
-      <h1><img src="assets/img/ASME-VIT.png" style="width: 8em;"></h1>
-  <h2 style="font-size: 25px;color: rgb(255, 255, 255);font-weight: 800;">American Society Of Mechanical Engineers-VIT</h2>
+      <h1><img id="imghero" src="assets/img/ASME-VIT.png" style="width: 9em;"></h1>
+  <!-- <h2 style="font-size: 25px;color: rgb(255, 255, 255);font-weight: 800;">American Society Of Mechanical Engineers-VIT</h2> -->
 
 
    
@@ -935,7 +935,7 @@
               </div>
             </div>
 
-              <form id="messageform" class="php-email-form mt-4">
+            <form id="messageform" class="php-email-form mt-4">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1072,8 +1072,8 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    
-    
+
+
     
 var push_to_firebase = function(data){
      alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
@@ -1109,6 +1109,7 @@ var push_to_firebase = function(data){
    }
 
    document.getElementById("submit_msg").addEventListener("click", contact_submit);
+
 
 
   </script>
