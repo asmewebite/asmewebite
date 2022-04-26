@@ -558,10 +558,6 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about{
-  margin-left: 35px;
-  margin-right: 35px;
-}
 
 
 .about .content h2 {
@@ -623,8 +619,6 @@ section {
 --------------------------------------------------------------*/
 .features {
   padding-top: 20px;
-  margin-left: 35px;
-  margin-right: 35px;
 }
 
 .features h2 {
@@ -739,8 +733,7 @@ section {
 .cta {
   background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("https://firebasestorage.googleapis.com/v0/b/asmeportal.appspot.com/o/others%2Fcta.JPG?alt=media&token=f1eaf194-0779-4ec5-83a3-60b4785e54a3") fixed center center;
   background-size: cover;
-  margin-left: 45px;
-  margin-right: 45px;
+
 }
 
 .cta h3 {
