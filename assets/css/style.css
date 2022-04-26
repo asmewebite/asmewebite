@@ -3,12 +3,12 @@ body {
   background-color: #2D2D2D;
 
 
+
 }
 
 h1 h2 h3{
   font-family: 'progress-personal-use';
 }
-
 
 a {
   color: #0289e2;
@@ -84,7 +84,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0289e2;
+  background: #A33328;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -98,7 +98,7 @@ a:hover {
 }
 
 .back-to-top:hover {
-  background: #015b97;
+  background: #bf3d32;
   color: #fff;
 }
 
@@ -502,9 +502,6 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background-color: #f6f6f7;
-}
 
 .section-title {
   padding-bottom: 30px;
@@ -525,7 +522,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #0289e2;
+  background: #689775;
   bottom: 0;
   left: 0;
 }
@@ -763,13 +760,13 @@ section {
   border-radius: 25px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #917164;
   color: #fff;
 }
 
 .cta .cta-btn:hover {
-  background: #0289e2;
-  border: 2px solid #0289e2;
+  background: #917164;
+  border: 2px solid #917164;
 }
 
 /*--------------------------------------------------------------
@@ -777,17 +774,15 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ebebeb;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #ffc451;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -920,7 +915,7 @@ section {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #0289e2;
+  background: #917164;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -997,7 +992,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #0289e2;
+  color: #917164;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1033,11 +1028,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0289e2;
+  border: 1px solid #917164;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0289e2;
+  background-color: #917164;
 }
 
 
@@ -1250,7 +1245,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #0289e2;
+  background: #917164;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1301,7 +1296,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #0289e2;
+  background: #917164;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1321,7 +1316,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #0289e2;
+  border: 3px solid #917164;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1342,7 +1337,7 @@ section {
 }
 
 .contact .php-email-form .submit {
-  background: #0289e2;
+  background: #917164;
   border: 0;
   padding: 10px 30px;
   color: #fff;
