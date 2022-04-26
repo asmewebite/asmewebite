@@ -1,7 +1,7 @@
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  background-color: #2D2D2D;
+
 }
 
 a {
@@ -14,9 +14,6 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-}
 
 
    /*Scrollbar*/
@@ -233,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .getstarted:hover {
   color: #fff;
-  background: #c60505;
+  background: #C11919;
 }
 
 .navbar .dropdown ul {
@@ -456,8 +453,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #c60505;
-  border: 2px solid #c60505;
+  background: #C11919;
+  border: 2px solid #C11919;
 }
 
 @media (min-width: 1024px) {
@@ -535,7 +532,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #D91919;
+  background: #A33328;
   text-align: center;
   padding: 5px 0;
 }
@@ -561,37 +558,34 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+
 .about .content h2 {
-  font-weight: 700;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  color: #689775;
 }
 
-.about .content h3 {
-  font-weight: 500;
-  line-height: 32px;
-  font-size: 24px;
+.about .content p {
+  text-align: justify;
+  color: white;
+  font-size: 16px;
+
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.about .content img {
+  height: 400px;
+  margin-top: 15px;
+
 }
 
-.about .content ul li {
-  padding: 10px 0 0 28px;
-  position: relative;
-}
 
-.about .content ul i {
-  left: 0;
-  top: 7px;
-  position: absolute;
-  font-size: 20px;
-  color: #0289e2;
-}
 
 .about .content p:last-child {
   margin-bottom: 0;
@@ -615,7 +609,7 @@ section {
 
 .counts .counters p {
   padding: 0;
-  color: #36a6f1;
+  color: #C11919;
   text-align: center;
   margin: 0 0 20px 0;
   font-family: "Raleway", sans-serif;
@@ -629,17 +623,22 @@ section {
 --------------------------------------------------------------*/
 .features {
   padding-top: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.features h2 {
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #689775;
 }
 
 .features .icon-box {
   padding-left: 15px;
+  background-color: white;
 }
 
-.features .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
-}
+
 
 .features .icon-box i {
   font-size: 48px;
@@ -649,7 +648,7 @@ section {
 
 .features .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: #d8d8d8;
   margin-left: 60px;
 }
 
@@ -662,7 +661,7 @@ section {
 
 
 #features .icon-box {
-  padding: 30px 20px;
+  padding: 10px 10px;
   transition: ease-in-out 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 100%;
@@ -670,20 +669,8 @@ section {
 }
 
 
-
-
-
-
-
-
-#features .icon-box i {
-  font-size: 32px;
-  line-height: 1;
-  color: #ffc451;
-}
-
 #features .icon-box h3 {
-  font-weight: 700;
+
   margin: 10px 0 0 0;
   padding: 0;
   line-height: 1;
@@ -711,12 +698,12 @@ section {
 }
 
 #features .icon-box {
-  border-color: #259ff0;
+  border-color: #917164;
 }
 
 
 #features .icon-box:hover {
-  background-color: rgb(136, 176, 250);
+  background-color: #977E74;
   box-shadow: 5px 10px;
   box-shadow: rgb(0, 0, 0);
   
@@ -750,9 +737,10 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("http://english.iut.ac.ir/sites/default/files/faculties/Mechanical%20engineering/Mech-eng.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("https://firebasestorage.googleapis.com/v0/b/asmeportal.appspot.com/o/others%2Fcta.JPG?alt=media&token=f1eaf194-0779-4ec5-83a3-60b4785e54a3") fixed center center;
   background-size: cover;
-  padding: 60px 0;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .cta h3 {
